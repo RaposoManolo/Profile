@@ -1,0 +1,2 @@
+Align navigation centered vertically
+Change icon color and pixels
