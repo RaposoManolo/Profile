@@ -1,5 +1,5 @@
 body{
-	background-color: grey;
+	background-color: white;
 }
 
 main{
@@ -39,14 +39,14 @@ nav a:hover {
 /* Content */
 #Main-Photo{
 	border-radius: 50%;
-	height: 50%;
-	padding-top: 10px;
 }
 
 h1{
 	font-size: 100px;
 	padding-top: 0px;
 	margin-top: 7%;
+	text-align: center;
+	border-style: solid;
 }
 
 p{
