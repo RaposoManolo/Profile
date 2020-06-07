@@ -1,34 +1,50 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <Title>My Profile</Title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Profile.css">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
+ .container{
+        width: 800px;
+        height: 400px;
+        position: relative;
+        margin: 20px;
+    }
+.square {
+  height: 150px;
+  width: 510px;
+  background-color: #555;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;  /* for demo purpose  */
+    
+}
+
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-color: #555;
+  border-radius: 50%;
+   z-index: 9;
+    top: 50px;
+  left: 0;
+ 
+        
+}
+</style>
+</head>
 <body>
-    <main>    
-        <header>
-            <nav>
-                <a class="Icon"><img src="Images\global.png"> </a>
-                <a href="index.html"> Home</a> 
-                <a href="/css/">    About</a> 
-                <a href="/js/">     Skills</a> 
-                <a href="Experience.html"> Experience</a>
-            </nav>
-        </header>
-    <div>    
-        <h1 align="left">Iuri Manuel Raposo<h1>
-        <img  id="Main-Photo" src= "Images\Profile-Main.jpg">
-    </div>
-  <!-- <div class="Main-Photo"> <img  id="Main-Photo" src= "Images\Profile-Main.jpg"> </div>-->
-    
-    
-    <p>   Qlik Developer<p>
-    <footer>
-           &copy; Iuri 
-    </footer>
-    </main>
+
+<div class="container">
+       <div class="square"></div>
+        <div class="circle"></div>
+</div>
+
 
 </body>
-</html>
