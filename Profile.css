@@ -1,0 +1,33 @@
+body{
+  margin:0;
+  background-color: rgb(235,235,235);
+
+}
+.header{
+        width: 40%;
+        height: 200px;
+        position: relative;
+        margin:auto;
+        background-color: rgb(14,180,124);
+        box-sizing: border-box;
+         /*  padding: 100px 120px 100px 120px;*/
+}
+
+
+img {
+  max-height:65%;
+  max-width: 50%;
+  border-radius: 50%;
+  border: 5px solid rgb(235,235,235);
+  z-index: 9;
+  position: relative;
+  left: 5%;
+  top:125px;
+ }
+
+
+ /*style="width:128px;height:128px;"
+
+
+
+

@@ -1,0 +1,60 @@
+body{
+	background-color: white;
+}
+
+main{
+	margin:auto;
+	width: 50%;
+	background-color: white;
+	padding-bottom: 50px;
+	margin-top: -8px;
+}
+
+/* Link selectors*/
+
+nav{
+     display:flex;
+     flex-wrap:wrap;
+     border-bottom-style: groove;
+     border-width:1px;
+     padding-top: 10px;
+    /* border-style: solid;*/
+      }
+      
+nav a {
+    text-decoration: none;
+    padding: 0px 70px;
+    text-align: center;
+   	margin: auto;
+   	/*color: rgb(120,180,186);*/
+   	color: rgb(0,116,123);
+      }
+
+nav a:hover {
+	/*color: rgb(0,116,123);*/
+	color: rgb(120,180,186);
+    }
+
+
+/* Content */
+#Main-Photo{
+	border-radius: 50%;
+}
+
+h1{
+	font-size: 100px;
+	padding-top: 0px;
+	margin-top: 7%;
+	text-align: center;
+	border-style: solid;
+}
+
+p{
+	font-size: 60px;
+	text-align: center;
+}
+
+
+footer{
+	font-size: 10px;
+}
