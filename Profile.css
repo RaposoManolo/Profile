@@ -16,7 +16,7 @@ body{
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
   .header {
     max-width: 100%;
   }
@@ -46,6 +46,7 @@ img {
  }
 
  .summary{
+  display: flex;
   z-index: 8;
   position: relative;
   top:-90px;
@@ -56,16 +57,16 @@ left: 275px;
  h2{
 text-align: center;
 margin-top: 80px;
+}
 
- }
-
-
-
-
-/*<img src="Images/Profile-Main.jpg" alt="HTML5 Icon">
-
-
- /*style="width:128px;height:128px;"
+.skills{
+  background-color: white;
+    max-width: 50%;
+        height: 150px;
+      
+        margin:auto;
+  
+}
 
 
 
