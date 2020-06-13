@@ -1,29 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   margin:0;
   background-color: rgb(235,235,235);
 
 }
 .header{
-        max-width: 40%;
-        height: 200px;
+        max-width: 50%;
+        height: 150px;
         position: relative;
-       margin:auto;
+        margin:auto;
         background-color: rgb(14,180,124);
-        box-sizing: border-box;
 }
 
-
-
-img {
-  max-height:65%;
-  max-width: 50%;
-  border-radius: 50%;
-  border: 5px solid rgb(235,235,235);
-  z-index: 9;
-  position: relative;
-  left: 5%;
-  top:125px;
- }
 
 @media only screen and (max-width:600px) {
   .header {
@@ -31,7 +22,47 @@ img {
   }
 }
 
+.title{
+  display: flex;
+}
 
+.fullname{
+  height: 0px;
+  margin-right: auto;
+}
+
+.jobtitle{
+  height: 0px;
+}
+
+img {
+  max-height:75%;
+  border-radius: 50%;
+  border: 7px solid rgb(235,235,235);
+  z-index: 9;
+  position: relative;
+  left: 5%;
+  top:50px;
+ }
+
+ .summary{
+  z-index: 8;
+  position: relative;
+  top:-90px;
+width: 500px;
+left: 275px;
+ }
+
+ h2{
+text-align: center;
+margin-top: 80px;
+
+ }
+
+
+
+
+/*<img src="Images/Profile-Main.jpg" alt="HTML5 Icon">
 
 
  /*style="width:128px;height:128px;"
