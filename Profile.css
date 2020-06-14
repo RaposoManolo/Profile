@@ -7,6 +7,7 @@ body{
   background-color: rgb(235,235,235);
 
 }
+
 .header{
         max-width: 50%;
         height: 150px;
@@ -15,15 +16,11 @@ body{
         background-color: rgb(14,180,124);
 }
 
-
-
-
 .title{
   display: flex;
 }
 
 .fullname{
-  height: 0px;
   margin-right: auto;
 }
 
@@ -37,19 +34,20 @@ img {
   top:50px;
  }
 
- .summary{
-  display: flex;
-  z-index: 8;
+.summary{
   position: relative;
-  top:-90px;
-width: 500px;
-left: 275px;
+  top:   -35%;
+  left:   42%;
+  margin: 0;
+  height: 25%;
+  width:  60%;
+  overflow:hidden;
  }
 
- h2{
-text-align: center;
-margin-top: 80px;
-color:rgb(14,180,124); 
+h2{
+  text-align: center;
+  margin-top: 80px;
+  color:rgb(14,180,124); 
 }
 
 .skills{
@@ -62,10 +60,6 @@ color:rgb(14,180,124);
   justify-content: space-between;
 }
 
-.buttons {
-  margin-bottom: 30px;
-
-}
 
 button {
   text-transform: capitalize;
@@ -124,11 +118,13 @@ circle {
   }
 
 @media only screen and (max-width:800px) {
-  .header {
+  .header, .skills {
     max-width: 100%;
   }
-  .skills{
-    max-width: 100%;
+
+  .summary{
+    width: 500px;
+    left: 0px;
   }
 }
 

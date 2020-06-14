@@ -7,9 +7,9 @@ var continents = {
   QlikView  : 90,
   QlikSense : 80,
   "HTML/CSS": 70,
-  oceania: 1,
-  africa: 15,
-  europe: 12
+  JavaScript: 60,
+  ToBeDesc2: 15,
+  ToBeDesc3: 12
 };
 
 // work out percentage as a result of total
