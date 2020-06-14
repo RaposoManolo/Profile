@@ -20,6 +20,9 @@ body{
   .header {
     max-width: 100%;
   }
+  .skills{
+    max-width: 100%;
+  }
 }
 
 .title{
