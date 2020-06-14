@@ -4,9 +4,9 @@ var total = 158,
     activeClass = 'active';
 
 var continents = {
-  asia: 60,
-  northAmerica : 5,
-  southAmerica: 9,
+  QlikView  : 90,
+  QlikSense : 80,
+  "HTML/CSS": 70,
   oceania: 1,
   africa: 15,
   europe: 12
@@ -53,5 +53,5 @@ var setActiveClass = function(el) {
 }
 
 // Set up default settings
-setPieChart('asia');
+setPieChart('QlikView');
 setActiveClass(buttons.children[0]);

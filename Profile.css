@@ -16,14 +16,7 @@ body{
 }
 
 
-@media only screen and (max-width:800px) {
-  .header {
-    max-width: 100%;
-  }
-  .skills{
-    max-width: 100%;
-  }
-}
+
 
 .title{
   display: flex;
@@ -125,6 +118,19 @@ circle {
 }
 
 
+
+  button{
+    width: 80px;
+  }
+
+@media only screen and (max-width:800px) {
+  .header {
+    max-width: 100%;
+  }
+  .skills{
+    max-width: 100%;
+  }
+}
 
 
 
