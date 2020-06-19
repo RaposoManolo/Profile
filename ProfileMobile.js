@@ -1,24 +1,30 @@
-total = 158,
-    buttons = document.querySelector('.buttons'),
-    pie = document.querySelector('.chart'),
+totalMobile = 135,
+    buttons = document.querySelector('.buttonsMobile'),
+    pie = document.querySelector('.chart-mobile'),
     activeClass = 'active';
+/*var total = 135,
+    buttons = document.querySelector('.buttons'),
+    pie = document.querySelector('.pie'),
+    activeClass = 'active';*/
 
-var skills = {
+
+
+var skillsMobile = {
   QlikView  : 90,
   QlikSense : 80,
   "HTML/CSS": 70,
   JavaScript: 40,
-  "D3.JS": 1
+  D3: 1
 };
 
 // work out percentage as a result of total
 var numberFixer = function(num){
-  var result = ((num * total) / 100);
+  var result = ((num * totalMobile) / 100);
   return result;
 }
 
 // create a button for each country
-for(property in skills){
+for(property in skillsMobile){
   var newEl = document.createElement('button');
   newEl.innerText = property;
   newEl.setAttribute('data-name', property);
@@ -37,9 +43,9 @@ for(property in skills){
   });
 
 var setPieChart = function(name){
-  var number = skills[name],
+  var number = skillsMobile[name],
       fixedNumber = numberFixer(number),
-      result = fixedNumber + ' ' + total;
+      result = fixedNumber + ' ' + totalMobile;
   
   pie.style.strokeDasharray = result;
 }

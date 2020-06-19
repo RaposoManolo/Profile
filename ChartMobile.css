@@ -1,0 +1,17 @@
+/*.pie-mobile {
+  fill: black;
+  stroke:black;
+  stroke-width: 89;
+  stroke-dasharray: 0 158;
+  -webkit-transition: stroke-dasharray .3s ease;
+  transition: stroke-dasharray .3s ease;
+}
+
+.chart-mobile {
+  margin: 0 auto;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: #ddd;
+  border-radius: 50%;
+  display: none;
+}*/

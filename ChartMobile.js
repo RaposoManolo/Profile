@@ -1,14 +1,17 @@
-total = 158,
+
+/*
+var total = 158,
     buttons = document.querySelector('.buttons'),
-    pie = document.querySelector('.chart'),
+    pie = document.querySelector('.pie'),
     activeClass = 'active';
 
-var skills = {
-  QlikView  : 90,
-  QlikSense : 80,
-  "HTML/CSS": 70,
-  JavaScript: 40,
-  "D3.JS": 1
+var continents = {
+  asia: 60,
+  northAmerica : 5,
+  southAmerica: 9,
+  oceania: 1,
+  africa: 15,
+  europe: 12
 };
 
 // work out percentage as a result of total
@@ -18,7 +21,7 @@ var numberFixer = function(num){
 }
 
 // create a button for each country
-for(property in skills){
+for(property in continents){
   var newEl = document.createElement('button');
   newEl.innerText = property;
   newEl.setAttribute('data-name', property);
@@ -37,7 +40,7 @@ for(property in skills){
   });
 
 var setPieChart = function(name){
-  var number = skills[name],
+  var number = continents[name],
       fixedNumber = numberFixer(number),
       result = fixedNumber + ' ' + total;
   
@@ -52,5 +55,6 @@ var setActiveClass = function(el) {
 }
 
 // Set up default settings
-setPieChart('QlikView');
+setPieChart('asia');
 setActiveClass(buttons.children[0]);
+
