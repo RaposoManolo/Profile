@@ -1,3 +1,9 @@
+/*
+    background: url('.png') -100 0;
+    width: 16px;
+    background-repeat: no-repeat;
+*/
+
 *{
     box-sizing: border-box;
     font-family: verdana;
@@ -42,7 +48,7 @@ body{
   top:   -55%;
   left:   42%;
   margin: 0;
-  height: 45%;
+  height: 60px;
   width:  58%;
   overflow:hidden;
  }
@@ -66,13 +72,16 @@ h2{
   justify-content: space-between;
 }
 
+
 .buttons {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 button {
+  font-weight:bold;
   font-size: 13px;
   cursor: pointer;
   -webkit-appearance: none;
@@ -84,28 +93,40 @@ button {
   border-radius: 2px;
   -webkit-transition: background-color .1s ease, color .2s ease;
   transition: background-color .1s ease, color .2s ease;
+  width: 100%;
 }
+
 button:last-of-type {
   margin-right: 0;
 }
 
 button.active {
-  font-weight: 400;
-  background-color: #0074d9;
+  font-weight:bold;
+  background-color: rgb(14,180,124);
   color: white;
 }
 
-.skill-icon{
-  height:100px;
-  border-radius: 50%;
+.skillicon{
+  background-image: url("Images/IconTest.png");
+  background-size:1000px;
+  height:110px;
+   width: 110px;
+ /* border-radius: 50%;*/
   position: relative;
-  left: 5%;
+ /* left: 1%;*/
   top:0px;
-}
+/*border-style: solid;*/
+ background-repeat: no-repeat;
+  padding-right: 0px;
+  background-position:0px 0px;
+  /*border-style: solid;*/
+  /*background-position:-100px 0px; */
+
+  }
 
 circle {
   fill: #ddd;
-  stroke: #0074d9;
+  stroke: rgb(14,180,124);
   stroke-width: 50;
  /* stroke-dasharray: 0 158;*/
   -webkit-transition: stroke-dasharray .3s ease;
@@ -117,14 +138,21 @@ svg {
   transform: rotate(-90deg);
   background: #ddd;
   border-radius: 50%;
+  /*margin-left:250px;*/
+  /*border-style: solid;*/
+  position: absolute;
+  left: 22%;
 }
 
 .desc{
    margin-top: 0px;
-   width: 200px;
+   width: 53%;
    overflow:hidden;
-   left: 10px
-   border: 7px solid rgb(235,235,235);
+   left: 100px
+   border-color: red;/*7px solid rgb(235,235,235)*/
+   /*border-style: solid;*/
+   margin-left: 0px;
+  /* position: absolute;*/
 }
 
 #experience{
@@ -145,10 +173,10 @@ background-color: white;
 
 }
 
-.period-experience{
-background-color: #0487cc;
+/*.period-experience{
+background-color: rgb(14,180,124);;
 
-}
+}*/
 
 .section-experience .period-experience {
     display: inline-block;
@@ -251,7 +279,7 @@ ul {
 
 .section-about h2 span,
 .theme-option .open-theme:hover {
-  color: #000000;
+  color: rgb(14,180,124);
 }
 
 .section-education h3
@@ -265,13 +293,13 @@ ul {
 
 .section-education h3
  {
-  background-color: #0487cc;
+  background-color: rgb(14,180,124);
 }
 
 
 .section-education h3::before {
-  border-top-color: #035c8a;
-  border-right-color: #035c8a;
+  border-top-color: rgb(0,100,0);
+  border-right-color: rgb(0,100,0);
 
 }
 
@@ -289,7 +317,7 @@ ul {
 
   footer{
   max-width: 50%;
-  height: 105px;
+  height: 135px;
   position: relative;
   margin:auto;
   background-color: rgb(14,180,124);
@@ -297,6 +325,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: 0;
   }
 
   .logo-footer{
@@ -309,7 +338,7 @@ ul {
 
  /*Mobile CSS**************************************************************/
 
- @media only screen and (max-width:800px) {
+ @media only screen and (max-width:910px) {
   .header{
     max-width: 100%;
   }
@@ -342,10 +371,12 @@ ul {
    display: none;
   }
 
-  svg{
-    margin-left: 50px;
+  /*svg{
+     left:72%;
+  }*/
+svg{
+     left:25%;
   }
-
 
 
   .skill-content{
@@ -372,11 +403,20 @@ ul {
 
   footer{
     max-width: 100%;
-    margin:0;
+    margin-top: 0;
   height: 136px;
   }
 
+}
 
-
+ @media only screen and (max-width:750px) {
+  svg{
+     left:72%;
+  }
 
 }
+
+
+
+
+
