@@ -1,131 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-     <Title>TEMP_TO_RENAME</Title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Profile.css"> 
-    <link rel="stylesheet" type="text/css" href="ChartMobile.css"> 
-</head>
+  <head>
+    <title>IMRaposo</title>
+    <meta name="description"    content="I’m an motivated and hardworker Business Intelligence developer with a big passion for the investment industry and this is my online portfolio!">
+    <meta name="keywords"       content="CV, Profile, Tech Skills, Portfolio">
+    <meta name="author"         content="Iuri Manuel Raposo">
+    <meta name="viewport"       content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"      type="text/css" href="Profile.css"> 
+    <link rel="icon"            type="image/png"href="Images/favicon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
 
-<body>
-    <div class="header">
-        <div class ="title">
-             <p class= "fullname">Logo Goes HERE</p>
-            <p class= "fullname">Iuri Manuel Raposo</p>
-            <p class= "jobtitle">BI Developer </p> 
-       </div>
-       <img src="Images/Profile-Main.jpg" class="profilepic" alt="HTML5 Icon">
-       <p class="summary" >Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly can private.</p>
+  <body>
+<!--*************************************Header*************************************************-->
+
+  <div class="header">
+    <ul id="title" class = "title">
+      <li><img id="logo" src="Images/logo_transparent.png"></li>
+      <li><p class= "fullname">Iuri Raposo</></li>
+      <!--li><p class= "fullname">Iuri Raposo</></li-->
+      <li><p class= "jobtitle">BI Developer</p> </li>
+    </ul>
+    <img src="Images/Profile-Main.jpg" class="profilepic" alt="HTML5 Icon">
+    <p class="summary" >Business Intelligence developer with strong background in QlikView and QlikSense.</p>
+  </div>
+<!--*************************************Skills*************************************************-->
+  <h2 style="font-family:verdana">SKILLS</h2>
+
+  <section id="skills">
+    <div class="buttons"></div>
+    <div class="skill-content">
+      <div class="skill-icon" alt="HTML5 Icon"></div>
+      <svg width="100" height="100" class="chart">
+        <circle r="25" cx="50" cy="50" id="pie"/>
+      </svg>
+      <p class= "skill-summary">Qlikview development skill acquired by working throughout many successful implementations since 2015 in both financial and pharmaceutical sectors. Created new applications, maintained existing ones and explored other Qlik technologies such as Nprinting.</p>
     </div>
+  </section>
+<!--*************************************Experience*************************************************-->
+  <h2 class="experience" style="font-family:verdana">EXPERIENCE</h2>
 
-    <h2 style="font-family:verdana">SKILLS</h2>
+    <section class="section-experience">
 
-    <div class="content" id="skills">
-        <div class="buttons"></div>
-        <div class="skill-content">
-        <div class="skillicon" alt="HTML5 Icon"></div>
-            <svg width="100" height="100" class="chart">
-                <circle r="25" cx="50" cy="50" id="pie"/>
-            </svg>
-             <p class= "desc">Kindness to he horrible reserved yeKindness to he horrible reserved yeKindness to he horrible reserved ye</p>
-        </div>
-    </div>
-         <p class= "desc-mobile" style="font-size:10px">Kindness to he horrible reserved yeKindness to he horrible reserved.</p>
-    <h2 class="experience" style="font-family:verdana">EXPERIENCE</h2>
-    <section id="education" class="section section-education wow fadeInUp" data-wow-offset="40" style="visibility: visible; animation-name: fadeInUp;">
-        <div class="row">
-
-            <!-- single education -->
-            <div class="col-sm-4">
-                <div class="education-content">
-                    <div class="period">
-                        <h3>2006 - 2008</h3>
-                    </div>
-                    <ul class="ul-education">
-                        <li class="li-specialty">
-                            <div class="specialty">
-                                <span class="education-icon"><i class="fa fa-file-text"></i></span>
-                                <span class="specialty-name">Computer Science</span>
-                            </div>
-                        </li>
-                        <li class="li-university">
-                            <div class="university">
-                                <span class="education-icon"><i class="fa fa-university"></i></span>
-                                <span class="university-name">Lipro University</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="prg-education">I completed this degree from this prestigious insitution. I successful completed all the credits without any fallout and got A grade overall.</p>
-                </div>
-            </div>
-
-            <!-- single education -->
-            <div class="col-sm-4">
-              <div class="education-content">
-                      <div class="period">
-                        <h3>2006 - 2008</h3>
-                      </div>
-                      <ul class="ul-education">
-                        <li class="li-specialty">
-                          <div class="specialty">
-                            <span class="education-icon"><i class="fa fa-file-text"></i></span>
-                            <span class="specialty-name">Computer Science</span>
-                          </div>
-                        </li>
-                        <li class="li-university">
-                          <div class="university">
-                            <span class="education-icon"><i class="fa fa-university"></i></span>
-                            <span class="university-name">Lipro University</span>
-                          </div>
-                        </li>
-                      </ul>
-                      <p class="prg-education">I completed this degree from this prestigious insitution. I successful completed all the credits without any fallout and got A grade overall.</p>
-                    </div>
-            </div>
-            <!-- / single education -->
-            <!-- single education -->
-            <div class="col-sm-4">
-              <div class="education-content">
-                      <div class="period">
-                        <h3>2004 - 2006</h3>
-                      </div>
-                      <ul class="ul-education">
-                        <li class="li-specialty">
-                          <div class="specialty">
-                            <span class="education-icon"><i class="fa fa-file-text"></i></span>
-                            <span class="specialty-name">Desktop Dev</span>
-                          </div>
-                        </li>
-                        <li class="li-university">
-                          <div class="university">
-                            <span class="education-icon"><i class="fa fa-university"></i></span>
-                            <span class="university-name">Oxford University</span>
-                          </div>
-                        </li>
-                      </ul>
-                      <p class="prg-education">I completed this degree from this prestigious insitution. I successful completed all the credits without any fallout and got A grade overall.</p>
-                    </div>
-            </div>
-            <!-- / single education -->
-            <div class="clearfix"></div>
+    <div class="experience-container">
+    <!-- single experience -->
+      <div class="experience-division">
+        <div class="experience-content">
+          <div class="experience-details">
+            <h3>QlikView Developer</h3> 
+            <ul class="employment-details-section">
+              <li class="employment-details"><i class="far fa-building"></i> Institutional Shareholder Services</li><br>
+              <li class="employment-details"><i class="far fa-calendar-alt"></i> Oct 2015 - Present</li><br>
+              <li class="employment-details"><i class="fas fa-globe-europe"></i> London</li>
+            </ul>
           </div>
-        </section>
 
+          <ul class="tasks">
+            <li class="employment-details"><i class="fas fa-tasks"></i></i> Developing and maintaining Qlik applications for the fund management and mortgage industry.</li><br>
+            <li class="employment-details"><i class="fas fa-tasks"></i></i> Data modelling and creating ETL load scripts.</li><br>
+            <li class="employment-details"><i class="fas fa-tasks"></i></i> Maintaining extension with JavaScript and CSS.</li>
+          </ul>
+      </div>
+    </div>
+            <!-- single experience -->
+    <div class="experience-division">
+      <div class="experience-content">
+        <div class="experience-details">
+          <h3>QlikView Developer</h3> 
+          <ul class="employment-details-section">
+            <li class="employment-details"><i class="far fa-building"></i> HMR - Health Market Reseach</li><br>
+            <li class="employment-details"><i class="far fa-calendar-alt"></i> Dec 2014 - Sep 2015</li><br>
+            <li class="employment-details"><i class="fas fa-globe-europe"></i> Lisbon</li>
+          </ul>
+        </div>
 
+        <ul class="tasks">
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Developed and maintained QlikView applications for the pharmacy industry.</li><br>
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Designed data model and loaded data from multiple data sources.</li><br>
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Gathered information to define the business needs.</li>
+        </ul>
+    </div>
+  </div>
+           <!-- single experience -->
+    <div class="experience-division">
+      <div class="experience-content">
+        <div class="experience-details">
+          <h3>Software Tester</h3> 
+          <ul class="employment-details-section">
+            <li class="employment-details"><i class="far fa-building"></i> MEO</li><br>
+            <li class="employment-details"><i class="far fa-calendar-alt"></i> May 2013 - Sep 2014</li><br>
+            <li class="employment-details"><i class="fas fa-globe-europe"></i> Lisbon</li>
+          </ul>
+        </div>
 
-   <footer>
-       <p class="logo-footer">LOGO GOES HERE</p>
-       <div>
-            <p>About<br>
-            prestigious insitution. I successful completed all the credits without any fallout and got A grade overall</p>
-       <div>
-     
-    </footer>
+        <ul class="tasks">
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Involved in the evolutionary, corrective maintenance and regression tests projects for the client's web portals.</li><br>
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Prepared test cases and scenarios in accordance with the specifications.</li><br>
+          <li class="employment-details"><i class="fas fa-tasks"></i></i> Managed  defects, ensuring they are correctly captured, reported, tracked and retested.</li>
+        </ul>
+    </div>
+  </div>
+  </div>
+</section>
 
-<script src="jquery-3.5.1.min.js"></script>
-    <script src="Profile.js"></script>
-   <!-- <script src="ProfileMobile.js"></script>-->
-    
+<!--*************************************Education*************************************************-->
+  <h2 style="font-family:verdana">EDUCATION</h2>
+
+  <section class="education">
+    <div>
+      <h5><i class="fas fa-graduation-cap"> </i><b> University of Plymouth</b></h5>
+      <h6><i class="far fa-calendar-alt">   </i> Feb 2009 - Feb 2012</h6>
+      <p>BSc (Hons), Computer Science with Business</p>
+      <hr>
+    </div>
+    <div>
+      <h5><i class="fas fa-certificate">  </i><b> Qlik</b></h5>
+      <h6><i class="far fa-calendar-alt"> </i> Aug 2015</h6>
+      <p>QlikView 11 Developer</p>
+      <hr>
+    </div>
+    <div>
+      <h5><i class="fas fa-certificate">  </i><b> Qlik</b></h5>
+      <h6 class="w3-text-teal"><i class="far fa-calendar-alt"></i> Aug 2015</h6>
+      <p> QlikView 11 Designer</p>
+    </div>
+  </section>
+  <footer class="footer">
+     <img id="logo-footer" src="Images/logo_transparent.png">
+     <p class="findme">Find me on <a class="footer" href="https://www.linkedin.com/in/iurimanuelraposo" target="_blank"> <i class="fab fa-linkedin"></i></a></p> 
+      <p class="version">v1.1</p>
+  </footer>
    
+  <script src="Profile.js"></script>
 </body>
 </html>
