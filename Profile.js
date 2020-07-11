@@ -1,23 +1,22 @@
-total = 158,
-    buttons = document.querySelector('.buttons'),
-    pie = document.querySelector('.chart'),
-    icon= document.querySelector('.skillicon'),
-    activeClass = 'active';
+var total =158;
+var buttons = document.querySelector('.buttons');
+var pie = document.querySelector('.chart');
+var icon= document.querySelector('.skillicon');
+var activeClass = 'active';
 
 var skills = {
-  "QlikView" : 97,
-  QlikSense   :85, 
-  SQL         : 65,
-  CSS  : 70,
-  JavaScript  : 40
-  
+  "QlikView": 97,
+  QlikSense :85, 
+  SQL       : 65,
+  CSS       : 70,
+  JavaScript: 40
 };
 
 // work out percentage as a result of total
 var numberFixer = function(num){
-  var result = ((num * total) / 100);
+    var result = ((num * total) / 100);
   return result;
-}
+};
 
 // create a button for each country
 for(property in skills){
@@ -72,6 +71,7 @@ var setPieChart = function(name){
       result = fixedNumber + ' ' + total;
   
   pie.style.strokeDasharray = result;
+  console.log(result);
 }
 
 var setActiveClass = function(el) {
@@ -82,23 +82,7 @@ var setActiveClass = function(el) {
   }
 }
 
-
 // Set up default settings
 setPieChart('QlikView');
 setActiveClass(buttons.children[0]);
 
-
- 
-console.log(setActiveClass);
- // if(setPieChart=='QlikView'){
-// div.style.backgroundPosition  = "-100px 0px";
- //alert("JBJBH")//;}
-
-
-  /* if(e.target=='QlikView'){
-  div.style.backgroundPosition  = "-100px 0px";
-  }*/
-
-    /*if(skills=='QlikView'){
-   icon.style.backgroundPosition = "-100px 0px";
-  } ;*/
