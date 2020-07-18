@@ -130,6 +130,33 @@
      <p class="findme">Find me on <a class="footer" href="https://www.linkedin.com/in/iurimanuelraposo" target="_blank"> <i class="fab fa-linkedin"></i></a></p> 
       <p class="version">v1.1 - Jul 2020</p>
   </footer>
+<script type="text/javascript">
+    const webIntegrationId = "pfKQKP90DRzeZXbUO2COkxAtDTcoVgRP";
+    function login() {
+      function isLoggedIn() {
+        return fetch("https://insightincome.eu.qlikcloud.com/api/v1/users/me", {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            'qlik-web-integration-id': webIntegrationId,
+          },
+        }).then(response => {
+          return response.status === 200;
+        });
+      }
+      return isLoggedIn().then(loggedIn => {
+        if (!loggedIn) {
+          // popup with login
+          //if (window.confirm('If you click "ok" you would be redirected to the login page')) {		  
+            window.location.href = "https://yourtenant.eu.qlikcloud.com/login?qlik-web-integration-id=" + webIntegrationId + "&returnto=" + location.href;
+          //};
+        }
+      });
+    }
+	login()
+  </script>
   <iframe src="https://insightincome.eu.qlikcloud.com/single/?appid=8614e6e5-0059-4731-a4ae-cbc12a95c688&obj=PttXW&opt=ctxmenu,currsel" style="border:none;width:100%;height:100%;"></iframe>
   <script src="Profile.js"></script>
 </body>
